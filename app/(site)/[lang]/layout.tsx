@@ -3,6 +3,8 @@ import { normalizeLang } from "@/lib/i18n";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
+export const dynamic = "force-dynamic";
+
 export function generateStaticParams() {
   return [{ lang: "cs" }, { lang: "pl" }, { lang: "en" }];
 }
