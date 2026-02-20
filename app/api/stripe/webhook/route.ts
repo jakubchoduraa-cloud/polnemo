@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     data: {
       stripeEventId: event.id,
       type: event.type,
-      payloadJson: event as unknown as Record<string, unknown>
+      payloadJson: JSON.parse(JSON.stringify(event))
     }
   });
 
