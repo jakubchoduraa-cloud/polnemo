@@ -1,0 +1,12 @@
+# Replace example.com with your real domain before deploy.
+example.com {
+  encode gzip
+
+  header {
+    X-Frame-Options "SAMEORIGIN"
+    X-Content-Type-Options "nosniff"
+    Referrer-Policy "strict-origin-when-cross-origin"
+  }
+
+  reverse_proxy app:3000
+}

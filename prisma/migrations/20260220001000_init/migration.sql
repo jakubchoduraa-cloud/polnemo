@@ -1,0 +1,2 @@
+-- Prisma migration placeholder for MVP.
+-- Run `npx prisma migrate dev --name init` locally to regenerate exact SQL.
